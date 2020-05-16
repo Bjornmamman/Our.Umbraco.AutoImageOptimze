@@ -7,8 +7,8 @@
     <ProjectGuid>{FF4673B2-E3D2-41C6-B150-90ACFE4BCC47}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Our.Umbraco.AutomaticWebP</RootNamespace>
-    <AssemblyName>Our.Umbraco.AutomaticWebP</AssemblyName>
+    <RootNamespace>Our.Umbraco.AutoImageOptimze</RootNamespace>
+    <AssemblyName>Our.Umbraco.AutoImageOptimze</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
