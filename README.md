@@ -2,23 +2,30 @@
 
 ## This package includes ImageProcessor.Plugins.WebP 1.3 and requires ImageProcessor (>= 2.8.0)
 
+The plugin will "optimize" by adding default variables to imageprocessor.web querystring
+
 Appsettings
 
-**Our.Umbraco.AutoImageOptimze:Disabled** = (boolean) 
-*Disables the plugin - Default: false*
+<!-- Disables the plugin -->
+<add key="Our.Umbraco.AutoImageOptimze:Disabled" value="false" />
 
-**Our.Umbraco.AutoImageOptimze:WebP** = (boolean) 
-*abled automatic webp plugin - Default: true*
+<!-- Enabled automatic webp plugin -->
+<add key="Our.Umbraco.AutoImageOptimze:WebP" value="true" />
 
-**Our.Umbraco.AutoImageOptimze:Ignore** = (string) 
-*Ignores extensions and paths -  
-Example: "app_plugins, .gif" will ignore app_plugins folder and .gif*
+<!-- Ignores extensions and paths - Example: "app_plugins, .gif" will ignore app_plugins folder and .gif -->
+<add key="Our.Umbraco.AutoImageOptimze:Ignore" value=""/>
 
-**Our.Umbraco.AutoImageOptimze:Quality** = (int) 
-*Sets default quality - 0 disables it*
+<!-- Sets default quality -->
+<add key="Our.Umbraco.AutoImageOptimze:Quality" value="0" />
 
-**Our.Umbraco.AutoImageOptimze:MaxWidth** = (int) 
-*Set maxwidth for all none cropped images - 0 disables it*
+<!-- Set maxwidth for all none cropped images -->
+<add key="Our.Umbraco.AutoImageOptimze:MaxWidth" value="0" />
 
-**Our.Umbraco.AutoImageOptimze:MaxHeight** = (int) 
-*Set maxheight for all none cropped images - 0 disables it*
+<!-- Set maxheight for all none cropped images  -->
+<add key="Our.Umbraco.AutoImageOptimze:MaxHeight" value="0" />
+
+<!-- Caches all requests for 5 minutes, 0 will disable cache -->
+<add key="Our.Umbraco.AutoImageOptimze:CacheTimeout" value="300" />
+
+<!-- Reverts default logic, and will not "optimize" unless "optimize=true" is set in the querystring -->
+<add key="Our.Umbraco.AutoImageOptimze:Automatic" value="false" />
