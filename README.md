@@ -5,7 +5,7 @@
 The plugin will "optimize" by adding default variables to imageprocessor.web querystring
 
 Appsettings
-
+```
 <!-- Disables the plugin -->
 <add key="Our.Umbraco.AutoImageOptimze:Disabled" value="false" />
 
@@ -29,3 +29,4 @@ Appsettings
 
 <!-- Reverts default logic, and will not "optimize" unless "optimize=true" is set in the querystring -->
 <add key="Our.Umbraco.AutoImageOptimze:Automatic" value="false" />
+```
